@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* १ पटक मात्र घुम्ने कस्ट्युम एनिमेसन र कीफ्रेम */
+  --animate-spin-once: spinOnce 0.5s ease-in-out;
+
+  @keyframes spinOnce {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
