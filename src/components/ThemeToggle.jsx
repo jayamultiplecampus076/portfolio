@@ -6,8 +6,8 @@ function ThemeToggle() {
   const [isRotating, setIsRotating] = useState(false);
 
   const handleThemeClick = () => {
-    toggleTheme();       // थिम परिवर्तन गर्ने
-    setIsRotating(true);  // एनिमेसन सुरु गर्ने
+    toggleTheme();       // theme change garna 
+    setIsRotating(true);  // animation suru garna 
     
     // ५०० मिलिसेकेन्ड (एनिमेसन अवधि) पछि स्टेट रिसेट गर्ने
     setTimeout(() => {
@@ -43,7 +43,7 @@ function ThemeToggle() {
           ${isRotating ? 'animate-spin-once' : ''}
         `}
       >
-        {theme === 'dark' ? '☾' : '☀'}
+        {theme === 'dark' ? '>' : '<'}
       </span>
     </button>
   );
